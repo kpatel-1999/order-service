@@ -49,7 +49,7 @@ git branch -a
     Make sure the following tools are installed:
 
     1.Java 17 or higher
-    2.Maven 3.8+
+    2.Maven 3.0+
     3.Git
     4.Optional: Docker
 
