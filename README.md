@@ -36,7 +36,7 @@ It simulates a real-world scenario where customers can place and track their ord
 To clone this repository locally, follow these steps:
 ```shell
 # Clone the repository using HTTPS
-git clone https://code.techverito.com/kpatel/order-service.git
+git clone https://github.com/kpatel-1999/order-service.git
 
 # Navigate into the project directory
 cd order-service
