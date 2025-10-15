@@ -73,7 +73,40 @@ git branch -a
     postgres:15```
 
 
-## 3. Build and Run the Application
+## 3. Database Setup
+    This project uses PostgreSQL as the database.Please create the following databases before running the application:
+
+    1.order_processing_db — used for development.
+    2.order_processing_db_test — used for testing.
+
+### 🛠️ Steps to Create Databases in PostgreSQL
+
+You can create the databases either using the PostgreSQL CLI (psql) or pgAdmin.
+
+#### Option 1: Using psql Command Line
+```bash
+psql -U postgres
+
+# Create development database
+CREATE DATABASE order_processing_db;
+
+# Create test database
+CREATE DATABASE order_processing_db_test;
+
+# (Optional) List all databases to verify
+\l
+
+# Exit psql
+\q
+```
+
+#### Option 2: Using Docker (if running PostgreSQL in a container)
+    docker exec -it <postgres-container-name> psql -U postgres
+
+    CREATE DATABASE order_processing_db;
+    CREATE DATABASE order_processing_db_test;
+
+## 4. Build and Run the Application
 ### Build the project
 mvn clean install
 
@@ -83,7 +116,7 @@ mvn spring-boot:run
 The service will start at http://localhost:8080
 .
 
-## 4. Access Swagger UI and OpenAPI
+## 5. Access Swagger UI and OpenAPI
 
 Swagger UI: http://localhost:8080/swagger-ui.html
 
